@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+    <servlet>
+        <servlet-name>PublisherInterface</servlet-name>
+        <servlet-class>webservicerank.uiAppInterface.PublisherInterface</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClientInterface</servlet-name>
+        <servlet-class>webservicerank.uiAppInterface.ClientInterface</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminInterface</servlet-name>
+        <servlet-class>webservicerank.uiAppInterface.AdminInterface</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchInterface</servlet-name>
+        <servlet-class>webservicerank.uiAppInterface.SearchInterface</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PublisherInterface</servlet-name>
+        <url-pattern>/PublisherInterface</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientInterface</servlet-name>
+        <url-pattern>/ClientInterface</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminInterface</servlet-name>
+        <url-pattern>/AdminInterface</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchInterface</servlet-name>
+        <url-pattern>/SearchInterface</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

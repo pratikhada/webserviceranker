@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : configuration.xml
+    Created on : September 22, 2010, 11:42 AM
+    Author     : BIKASH
+    Description:
+        This file is the configuration file that the application needs
+        for different purposes. The values of elements are changed by
+        administrator as per requirements. 
+-->
+
+<webservicerank-configuration>
+
+    <WordNet-dir>
+        <!--
+            Add element with operating system user name and add the
+            directory (separator / or \\)  of wordnet dict as values
+        -->
+        <BIKASH>C:/WordNet-3.0/dict</BIKASH>
+        <pratik>C:/WordNet-3.0/dict</pratik>
+        <vhishma>C:/WordNet-3.0/dict</vhishma>
+    </WordNet-dir>
+
+    <Service-Database>
+        <SD-Driver>com.mysql.jdbc.Driver</SD-Driver>
+        <SD-Host>jdbc:mysql://localhost</SD-Host>
+        <SD-Port>3306</SD-Port>
+        <SD-DB-name>webservicerank</SD-DB-name>
+        <SD-Username>root</SD-Username>
+        <SD-Password></SD-Password>
+    </Service-Database>
+
+    <Ontology-repository>
+        <ont-Driver>com.mysql.jdbc.Driver</ont-Driver>
+        <ont-Host>jdbc:mysql://localhost</ont-Host>
+        <ont-Port>3306</ont-Port>
+        <ont-DB_name>webservicerank_ont</ont-DB_name>
+        <ont-DB_type>MySQL</ont-DB_type>
+        <ont-Username>root</ont-Username>
+        <ont-Password></ont-Password>
+    </Ontology-repository>
+
+</webservicerank-configuration>
